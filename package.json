@@ -1,0 +1,31 @@
+{
+    "name": "rc",
+    "version": "1.0.0",
+    "description": "CLI 开发中遇到 RC 文件配置",
+    "main": "index.js",
+    "scripts": {
+        "init": "rm -rf node_modules package-lock.json && npm install",
+        "clean": "rm -fr dist",
+        "start": "npm run build -- -w",
+        "build": "npm run clean && tsc -p src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GitHubJian/rc.git"
+    },
+    "dependencies": {
+        "fs-extra": "10.0.0",
+        "lodash.clonedeep": "4.5.0"
+    },
+    "devDependencies": {
+        "@types/node": "16.11.6",
+        "typescript": "4.1.3"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/GitHubJian/rc/issues"
+    },
+    "homepage": "https://github.com/GitHubJian/rc#readme"
+}
